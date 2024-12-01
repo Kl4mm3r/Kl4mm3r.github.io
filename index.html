@@ -169,6 +169,7 @@
 						<div class="row">
 							<div class="col-6 col-12-medium">
 								<section>
+								<!--
 									<form action="assets/php/submit.php" method="post" id="contact-form">
 										<?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
 										<div class="row gtr-50">
@@ -185,6 +186,13 @@
 												<input type = "submit" class="form-button-submit button icon solid fa-envelope" value="Nachricht senden">
 											</div>
 										</div>
+									</form>
+									-->
+									<form action="submit.php" method="POST">
+										<p>Name</p> <input type="text" name="name" class="input">
+										<p>Email</p> <input type="email" name="email" class="input">
+										<p>Message</p><textarea name="message" rows="6" cols="25" class="input"></textarea><br />
+										<input type="submit" value="Send">
 									</form>
 								</section>
 							</div>
