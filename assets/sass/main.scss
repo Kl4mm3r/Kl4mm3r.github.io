@@ -1145,6 +1145,7 @@
 			#titleBar {
 				@include vendor('backface-visibility', 'hidden');
 				@include vendor('transition', 'transform #{_duration(navPanel)} ease');
+				@include vendor('transition', 'transform #{_duration(navPanel)} ease');
 				display: block;
 				height: 44px;
 				left: 0;
@@ -1254,9 +1255,7 @@
 						@include vendor('transform', 'translateX(#{_size(navPanel)})');
 					}
 
-					#titleBar {
-						@include vendor('transform', 'translateX(#{_size(navPanel)})');
-					}
+					
 
 					#navPanel {
 						@include vendor('transform', 'translateX(0)');
