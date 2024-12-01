@@ -169,20 +169,20 @@
 						<div class="row">
 							<div class="col-6 col-12-medium">
 								<section>
-									<form action="/form.php" method="post" id="contact-form">
+									<form action="assets/php/submit.php" method="post" id="contact-form">
 										<?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
 										<div class="row gtr-50">
 											<div class="col-6 col-12-small">
 												<input name="name" placeholder="Name" type="text" />
 											</div>
 											<div class="col-6 col-12-small">
-												<input name="email" placeholder="Email" type="text" />
+												<input name="email" placeholder="Email" type="email" />
 											</div>
 											<div class="col-12">
 												<textarea name="message" placeholder="Nachricht"></textarea>
 											</div>
 											<div class="col-12">
-												<a href="#" class="form-button-submit button icon solid fa-envelope">Nachricht senden</a>
+												<input type = "submit" class="form-button-submit button icon solid fa-envelope" value="Nachricht senden">
 											</div>
 										</div>
 									</form>
